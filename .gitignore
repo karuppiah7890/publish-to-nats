@@ -1,0 +1,9 @@
+publish-to-nats
+
+*.env*
+
+!.env.sample
+
+*.tar.gz
+
+*.json
