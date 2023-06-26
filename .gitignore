@@ -7,3 +7,5 @@ publish-to-nats
 *.tar.gz
 
 *.json
+
+!example/*.json

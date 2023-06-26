@@ -1,0 +1,10 @@
+[
+  {
+    "subject": "test",
+    "payload": "{\"something\": \"ok\"}"
+  },
+  {
+    "subject": "test",
+    "payload": "{\"something\": \"okay\"}"
+  }
+]
