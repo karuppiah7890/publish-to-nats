@@ -44,6 +44,13 @@ func main() {
 	if err != nil {
 		log.Fatalf("error occurred while flushing messages to the NATS server: %v", err)
 	}
+
+	bufferedBytes, err := nc.Buffered()
+	if err != nil {
+		log.Fatalf("error occurred while checking number of bytes buffered to be sent to the NATS server: %v", err)
+	}
+
+	fmt.Printf("\nBuffered bytes not sent to server: %v\n", bufferedBytes)
 }
 
 type Message struct {
