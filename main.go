@@ -39,6 +39,11 @@ func main() {
 		}
 		fmt.Printf(".")
 	}
+
+	err = nc.Flush()
+	if err != nil {
+		log.Fatalf("error occurred while flushing messages to the NATS server: %v", err)
+	}
 }
 
 type Message struct {
